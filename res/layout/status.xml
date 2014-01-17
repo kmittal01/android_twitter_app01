@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/status_update"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/button_update"
+        android:onClick="OnClickNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_update" />
+    <EditText
+        android:id="@+id/edit_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:hint="What&apos;s On Your Mind?"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>
